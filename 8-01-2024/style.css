@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100;1,100&display=swap');
+.box{
+    height: 250px;
+    width: 250px;
+    border: 2px solid red;
+    overflow: visible;
+    margin: 5px;
+    padding: 5px;
+}
+
+button{
+    background-color: green;
+    color: white;
+    padding : 15px;
+    margin: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.dropdown{
+    position: relative;
+    /* display: inline-block; */
+}
+
+.content{
+   display: none;
+   position: absolute;
+   z-index: 1;
+   min-width: 150px;
+   box-shadow: 0px 8px 16px 0px black;
+}
+
+.content a{ 
+    color: green;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.dropdown:hover .content{
+    display: block;
+}
+
+.content a:hover{
+    background-color: beige;
+}
+
+p{
+    font-size: 50px;
+    font-family: 'Genos', sans-serif;
+    display: none;
+}
+/* 
+span{
+    font-size: 0.5em;
+} */
+
+@media screen and (min-width : 480px){
+    body{
+        background-color: red;
+    }
+   
+}
+
+@media screen and (min-width : 600px){
+    body{
+        background-color: aqua;
+    }
+   
+}
+
+@media screen and (max-width : 1000px){
+    button{
+        background-color: yellow;
+        color : black
+    }
+}
